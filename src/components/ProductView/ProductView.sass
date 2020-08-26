@@ -1,0 +1,20 @@
+.productView
+  display: flex
+  flex-wrap: nowrap
+  width: 100%
+  padding-top: 10px
+
+  +max($bp-sm)
+    flex-wrap: wrap
+
+  &__gallery
+    width: 50%
+
+    +max($bp-sm)
+      width: 100%
+
+  &__info
+    width: 50%
+
+    +max($bp-sm)
+      width: 100%

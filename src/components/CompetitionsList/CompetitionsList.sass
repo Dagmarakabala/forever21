@@ -1,0 +1,39 @@
+.competitionsList
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  text-align: left
+  margin-top: 
+
+  &__link
+    +nonedecoration
+    color: black
+
+  &__item
+    width: 33.33%
+    padding: 0px auto
+
+    +max($bp-sm)
+      width: 100%
+
+  &__container
+    max-width: 90%
+    margin: 0px auto
+
+  &__img
+    width: 100%
+    margin: 40px 0px
+
+  &__title
+    +title
+    padding-bottom: 0px
+
+  &__hr
+    +hr 
+    background-color: $yellow
+    position: relative
+
+
+  &__text
+    font-size: 14px
+    margin: 20px 0px

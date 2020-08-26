@@ -1,0 +1,53 @@
+.productViewSlider
+  display: flex
+  flex-wrap: nowrap
+  width: 100%
+  text-align: center
+
+  &__slick
+    width: 60%
+    margin: 0px auto
+
+  &__img
+    width: 20%
+
+  &__buttons
+    display: flex
+    flkex-wrap: nowrap
+    width: 40% 
+    background-color: $yellow
+
+.slick-next, .slick-prev
+  position: relative
+  width: 50%
+  height: 100%
+  margin: 0px
+  left: 0%
+  right: 0%
+  top: 0%
+  transform: translate(0, 0)
+
+.slick-prev:before
+  content: '<'
+  font-family: monospace
+  font-size: 80px
+
+  +max($bp-md)
+    font-size: 60px
+
+  +max($bp-sm)
+    font-size: 40px
+
+.slick-next:before
+  content: '>'
+  font-family: monospace
+  font-size: 80px
+
+  +max($bp-md)
+    font-size: 60px
+  
+  +max($bp-sm)
+    font-size: 40px
+
+.slick-slide 
+  margin-bottom: -5px

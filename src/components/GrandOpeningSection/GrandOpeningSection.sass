@@ -1,0 +1,44 @@
+.grandOpeningSection
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  padding: 20px
+
+  &__item
+    width: 33.33%
+    text-align: center
+    margin: auto
+
+    +max($bp-lg)
+      width: 50%
+      margin: 20px 0px
+
+  &__img
+    max-width: 100%
+
+  &__text
+    padding: 60px 10px 
+
+    +max($bp-lg)
+      padding: 30px 10px
+
+  &__table
+    +table
+    margin: 0px auto
+    font-size: 15px
+
+    &__cell
+      +cell 
+      margin: 0px auto
+    
+  &__link
+    +nonedecoration
+    color: $black
+
+.-notmaxwidth
+  max-width: 70%
+
+.-flexorder
+  +max($bp-lg)
+    width: 100%
+    order: -1

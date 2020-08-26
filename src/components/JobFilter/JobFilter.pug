@@ -1,0 +1,58 @@
+.jobFilter
+  .jobFilter__list
+    .jobFilter__item.-flexmax
+      h1.jobFilter__title Filtruj po
+    .jobFilter__item
+      .jobFilter__name Stanowisko
+      input.jobFilter__input(type="checkbox" id="positions" name="positions")
+      label.jobFilter__label
+      .jobFilter__list__second
+        .jobFilter__item__second
+          .jobFilter__name Kasjer
+          input.jobFilter__input(type="checkbox" id="cashier" name="position")
+          label.jobFilter__label__second
+        .jobFilter__item__second
+          .jobFilter__name Kierownik
+          input.jobFilter__input(type="checkbox"  id="maneger" name="position")
+          label.jobFilter__label__second
+        button(onclick="CheckPositions()") check
+    .jobFilter__item
+      .jobFilter__name Dział
+      input.jobFilter__input(type="checkbox" id="sections" name="sections")
+      label.jobFilter__label 
+      .jobFilter__list__second
+        .jobFilter__item__second
+          .jobFilter__name Finanse
+          input.jobFilter__input(type="checkbox" id="finance" name="section")
+          label.jobFilter__label__second
+        .jobFilter__item__second
+          .jobFilter__name Sprzedaż
+          input.jobFilter__input(type="checkbox" d="sale" name="section")
+          label.jobFilter__label__second
+    .jobFilter__item
+      .jobFilter__name Lokalizacja
+      input.jobFilter__input(type="checkbox" id="locations" name="locations")
+      label.jobFilter__label
+      .jobFilter__list__second
+        .jobFilter__item__second
+          .jobFilter__name Olsztyn
+          input.jobFilter__input(type="checkbox" id="olsztyn" name="'location")
+          label.jobFilter__label__second
+        .jobFilter__item__second
+          .jobFilter__name Gdańsk
+          input.jobFilter__input(type="checkbox" id="gdansk" name="location")
+          label.jobFilter__label__second 
+    .jobFilter__item
+      .jobFilter__name Data dodania
+      input.jobFilter__input(type="checkbox" id="date" name="dates")
+      label.jobFilter__label
+      .jobFilter__list__second
+        .jobFilter__item__second
+          input.jobFilter__inputdate(type="checkbox" id="newdate" name="date")
+          .jobFilter__name Od najnowszych
+        .jobFilter__item__second
+          input.jobFilter__inputdate(type="checkbox" id="olddate" name="date")
+          .jobFilter__name Od najstarszych
+    .jobFilter__item.-last.-noborderbottom.-flexmax
+      .jobFilter__clear Wyczyść filtry
+      .jobFilter__hide Ukryj filtry

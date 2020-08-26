@@ -1,0 +1,13 @@
+.careerForm
+  form.careerForm__content(action="" method="" enctype="multipart/form-data")
+    span.careerForm__inner
+      span.careerForm__data
+        | Imię i nazwisko
+        input.careerForm__input(type="text" required)
+      span.careerForm__data
+        | Adres e-mail
+        input.careerForm__input(type="email" required)
+    input.careerForm__file(type="file" name="Cv" accept="application/pdf" required)
+    span.careerForm__btn Załącz CV
+    textarea.careerForm__textarea
+    button.careerForm__btn.-btnbig Prześlij

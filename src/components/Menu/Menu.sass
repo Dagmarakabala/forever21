@@ -1,0 +1,26 @@
+.menu
+  display: inline-block
+  position: absolute
+  right: 0%
+
+  +max($bp-md)
+    visibility: hidden
+
+  &__list
+    padding: 26px 10px
+    list-style-type: none
+
+  &__listelement
+    display: inline
+    padding: 0px 10px
+    color: $alto
+    font-size: 22px
+    letter-spacing: -1px
+
+    +max($bp-xlg)
+      padding: 0px 5px
+      font-size: 20px
+
+  &__link
+    +nonedecoration
+    color: $alto

@@ -1,0 +1,38 @@
+.menuMobile
+  -webkit-transition: right 0.5s ease
+  -moz-transition: right 0.5s ease
+  -ms-transition: right 0.5s ease
+  -o-transition: right 0.5s ease
+  transition: right 0.5s ease
+  background: black
+  color: white
+  cursor: pointer
+  font-size: 2rem
+  height: 110vh
+  right: -50rem
+  padding: 6rem 2rem 2rem 2rem
+  position: fixed
+  top: 0
+  width: 20rem
+  z-index: 1
+  
+  &.expanded 
+    right: 0
+
+  &__list
+    position: absolute
+    top: 30%
+    padding: 26px 10px
+    list-style-type: none
+    font-size: 22px
+    letter-spacing: -1px
+
+  &__listelement
+    display: block
+    padding: 5px 0px
+    color: $alto
+  
+  &__link
+    +nonedecoration
+    color: $alto
+

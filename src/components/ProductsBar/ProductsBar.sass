@@ -1,0 +1,21 @@
+.productsBar
+  display: block
+  width: 20%
+  background-color: $yellow
+
+  &__title
+    font-size: 24px
+    font-weight: bold
+    padding: 20px 0px
+
+  &__item
+    padding: 10px 
+    font-size: 18px
+    border: 1px solid $black
+  
+
+.-active
+  background-color: darken($yellow, 10%)
+
+.-none
+  display: none

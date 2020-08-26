@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>FOREVER 21</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Szablon">
+    <meta name="description" content="Szablon opis">
+    <meta name="keywords" content="Szablon keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.min.css">
+  </head>
+  <body>
+    <div class="header" data-color="red"><a href="main.html"><img class="header__logo" src="./assets/images/Logo/logo.jpg" alt="Logo"></a>
+      <div class="menu animate__animated animate__fadeInDown">
+        <ul class="menu__list">
+          <li class="menu__listelement"><a class="menu__link" href="aboutus.html">O NAS</a></li>
+          <li class="menu__listelement"><a class="menu__link" href="grandopening.html">WIELKIE OTWARCIE</a></li>
+          <li class="menu__listelement"><a class="menu__link" href="inspiration.html">ZAINSPIRUJ SIĘ</a></li>
+          <li class="menu__listelement"><a class="menu__link" href="competitions.html">KONKURSY</a></li>
+          <li class="menu__listelement"><a class="menu__link" href="career.html">KARIERA</a></li>
+        </ul>
+      </div>
+      <div class="header__toggle">
+        <div class="header__togglebar"></div>
+      </div>
+      <div class="menuMobile">
+        <ul class="menuMobile__list">
+          <li class="menuMobile__listelement"><a class="menuMobile__link" href="aboutus.html">O NAS</a></li>
+          <li class="menuMobile__listelement"><a class="menuMobile__link" href="grandopening.html">WIELKIE OTWARCIE</a></li>
+          <li class="menuMobile__listelement"><a class="menuMobile__link" href="inspiration.html">ZAINSPIRUJ SIĘ</a></li>
+          <li class="menuMobile__listelement"><a class="menuMobile__link" href="competitions.html">KONKURSY</a></li>
+          <li class="menuMobile__listelement"><a class="menuMobile__link" href="career.html">KARIERA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="jobSection">
+      <div class="jobSection__container">
+        <div class="jobSection__inner">
+          <div class="jobFilter">
+            <div class="jobFilter__list">
+              <div class="jobFilter__item -flexmax">
+                <h1 class="jobFilter__title">Filtruj po</h1>
+              </div>
+              <div class="jobFilter__item">
+                <div class="jobFilter__name">Stanowisko</div>
+                <input class="jobFilter__input" type="checkbox" id="positions" name="positions">
+                <label class="jobFilter__label"></label>
+                <div class="jobFilter__list__second">
+                  <div class="jobFilter__item__second">
+                    <div class="jobFilter__name">Kasjer</div>
+                    <input class="jobFilter__input" type="checkbox" id="cashier" name="position">
+                    <label class="jobFilter__label__second"></label>
+                  </div>
+                  <div class="jobFilter__item__second">
+                    <div class="jobFilter__name">Kierownik</div>
+                    <input class="jobFilter__input" type="checkbox" id="maneger" name="position">
+                    <label class="jobFilter__label__second"></label>
+                  </div>
+                  <button onclick="CheckPositions()">check</button>
+                </div>
+              </div>
+              <div class="jobFilter__item">
+                <div class="jobFilter__name">Dział</div>
+                <input class="jobFilter__input" type="checkbox" id="sections" name="sections">
+                <label class="jobFilter__label"> </label>
+                <div class="jobFilter__list__second">
+                  <div class="jobFilter__item__second">
+                    <div class="jobFilter__name">Finanse</div>
+                    <input class="jobFilter__input" type="checkbox" id="finance" name="section">
+                    <label class="jobFilter__label__second"></label>
+                  </div>
+                  <div class="jobFilter__item__second">
+                    <div class="jobFilter__name">Sprzedaż</div>
+                    <input class="jobFilter__input" type="checkbox" d="sale" name="section">
+                    <label class="jobFilter__label__second"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="jobFilter__item">
+                <div class="jobFilter__name">Lokalizacja</div>
+                <input class="jobFilter__input" type="checkbox" id="locations" name="locations">
+                <label class="jobFilter__label"></label>
+                <div class="jobFilter__list__second">
+                  <div class="jobFilter__item__second">
+                    <div class="jobFilter__name">Olsztyn</div>
+                    <input class="jobFilter__input" type="checkbox" id="olsztyn" name="'location">
+                    <label class="jobFilter__label__second"></label>
+                  </div>
+                  <div class="jobFilter__item__second">
+                    <div class="jobFilter__name">Gdańsk</div>
+                    <input class="jobFilter__input" type="checkbox" id="gdansk" name="location">
+                    <label class="jobFilter__label__second"> </label>
+                  </div>
+                </div>
+              </div>
+              <div class="jobFilter__item">
+                <div class="jobFilter__name">Data dodania</div>
+                <input class="jobFilter__input" type="checkbox" id="date" name="dates">
+                <label class="jobFilter__label"></label>
+                <div class="jobFilter__list__second">
+                  <div class="jobFilter__item__second">
+                    <input class="jobFilter__inputdate" type="checkbox" id="newdate" name="date">
+                    <div class="jobFilter__name">Od najnowszych</div>
+                  </div>
+                  <div class="jobFilter__item__second">
+                    <input class="jobFilter__inputdate" type="checkbox" id="olddate" name="date">
+                    <div class="jobFilter__name">Od najstarszych</div>
+                  </div>
+                </div>
+              </div>
+              <div class="jobFilter__item -last -noborderbottom -flexmax">
+                <div class="jobFilter__clear">Wyczyść filtry</div>
+                <div class="jobFilter__hide">Ukryj filtry</div>
+              </div>
+            </div>
+          </div>
+          <div class="jobSearch">
+            <h1 class="jobSearch__title">Szukaj </h1>
+            <div class="jobSearch__inner">
+              <input class="jobSearch__input" type="search">
+              <button class="jobSearch__btn">Szukaj</button>
+            </div>
+            <div class="jobSearch__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <hr class="jobSection__hr">
+        <div class="jobSection__inner">
+          <div class="jobOffertList">
+            <div class="jobOffertList__list">
+              <div class="jobOffertList__item -flexmax">
+                <h1 class="jobOffertList__title">Oferta pracy</h1>
+              </div>
+              <div class="jobOffertList__item">Pierwsza oferta</div>
+              <div class="jobOffertList__item">Druga oferta</div>
+              <div class="jobOffertList__item">Trzecia Oferta</div>
+              <div class="jobOffertList__item">Pierwsza oferta</div>
+              <div class="jobOffertList__item">Druga oferta</div>
+              <div class="jobOffertList__item">Trzecia Oferta</div>
+              <div class="jobOffertList__item">Pierwsza oferta</div>
+              <div class="jobOffertList__item">Druga oferta</div>
+              <div class="jobOffertList__item">Trzecia Oferta</div>
+              <div class="jobOffertList__item">Pierwsza oferta</div>
+              <div class="jobOffertList__item">Druga oferta</div>
+              <div class="jobOffertList__item">Trzecia Oferta</div>
+              <div class="jobOffertList__item">Pierwsza oferta</div>
+              <div class="jobOffertList__item">Druga oferta</div>
+              <div class="jobOffertList__item">Trzecia Oferta</div>
+              <div class="jobOffertList__item -noborderbottom">....</div>
+            </div>
+          </div>
+          <div class="jobOffer">
+            <div class="jobOffer__header">
+              <h1 class="jobOffer__header__title">Nazwa stanowiska pracy </h1>
+              <div class="jobOffer__inner">
+                <div class="jobOffer__inner__text">Stanowisko </div>
+                <div class="jobOffer__inner__text">Lokalizacja</div>
+                <div class="jobOffer__inner__text">Dział</div>
+                <div class="jobOffer__inner__text">Data</div>
+              </div>
+            </div>
+            <div class="jobOffer__container">
+              <div class="jobOffer__container__title">Opis stanowiska</div>
+              <div class="jobOffer__text">
+                Wspieranie wizji firmy poprzez aktywną sprzadaż, działania operacyjne, dbanie o wygląd sklepu, pracę zespołową oraz doskonałą obsługę klienta.
+                Podstawowym zadaniem na tym stanoiwisku jest zaangażowanie w obsługę klienta podczas wykonywania codziennych obowiązków oraz powierzonych zadań.
+              </div>
+              <div class="jobOffer__container__title">Sprzedaż</div>
+              <ul class="jobOffer__list">
+                <li class="jobOffer__item">Znajomość tygodniowych, miesięcznych oraz rocznych planów sprzedażowych</li>
+                <li class="jobOffer__item">Zaangażowanie w zwiększenie średniej liczby sprzedanych produktów na paragonie</li>
+                <li class="jobOffer__item">Zaangażowanie w zwiększenie średniej wartości na paragonie</li>
+              </ul>
+              <div class="jobOffer__container__title">Działania operacyjne</div>
+              <ul class="jobOffer__list">
+                <li class="jobOffer__item">Utrzymanie czystego i dobrze zorganizowanego sklepu</li>
+                <li class="jobOffer__item">Dbanie o porządek na zapleczu sklepu</li>
+                <li class="jobOffer__item">Przestrzeganie zasad i procedur</li>
+              </ul>
+              <div class="jobOffer__container__title">Oczekiwane kompetencje i mocne strony</div>
+              <ul class="jobOffer__list">
+                <li class="jobOffer__item">Dobra komunikacja i zdolności interpersonalne</li>
+                <li class="jobOffer__item">Elastyczność związana z harmonogramem pracy</li>
+                <li class="jobOffer__item">Orientacja na wyznaczony cel oraz prace zespołową</li>
+                <li class="jobOffer__item">Odpornośc na stres</li>
+                <li class="jobOffer__item">Zachowanie poufności</li>
+              </ul>
+              <div class="jobOffer__btn -btntop">English</div><a href="career.html">
+                <div class="jobOffer__btn -btnbottom">Wyślij Cv</div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="moreInfo">
+      <div class="moreInfo__container">
+        <div class="moreInfo__inner">
+          <h1 class="moreInfo__title">
+             LOREM IPSUM 
+            <hr class="moreInfo__hr">
+          </h1>
+        </div><a class="moreInfo__btn" href="#">lorem ipsum</a>
+      </div>
+    </div>
+    <div class="footer"><img class="footer__img" src="./assets/images/Footer/footer.jpg" alt="Footer">
+      <table class="footer__table">
+        <tr>
+          <td class="footer__table__cell"><a class="footer__link" href="#">Lorem</a></td>
+          <td class="footer__table__cell"><a class="footer__link" href="#">Ipsum</a></td>
+          <td class="footer__table__cell"><a class="footer__link" href="#">Lorem</a></td>
+          <td class="footer__table__cell -blackhr"><a class="footer__link" href="#">Ipsum</a></td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script async src="./assets/scripts/main.min.js"></script>
+  </body>
+</html>

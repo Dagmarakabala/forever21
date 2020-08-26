@@ -1,0 +1,77 @@
+.header
+  display: inline-block
+  position: relative
+  width: 100%
+  background-color: $black
+
+  +max($bp-lg)
+    position: fixed
+    top: 0
+    height: 75px
+    z-index: 1
+
+  &__logo
+    max-width: 100%
+    padding: 5px 0px 0px 40px
+
+    +max($bp-lg)
+      max-width: 80%
+      padding: 10px 0px 0px 5px
+
+  &__toggle
+    -webkit-user-select: none
+    -moz-user-select: none
+    user-select: none
+    cursor: pointer
+    height: 2rem
+    right: 2rem
+    position: fixed
+    top: 2rem
+    width: 3.6rem
+    z-index: 2
+
+    +min($bp-md)
+      visibility: hidden
+
+  &__toggle &__togglebar, &__toggle &__togglebar::after, &__toggle &__togglebar::before
+    position: absolute
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    -ms-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+    transition: all 0.5s ease
+    background: white
+    content: ''
+    height: 0.4rem
+    width: 100%
+
+  &__toggle &__togglebar 
+    margin-top: 0
+    
+  &__toggle &__togglebar::after 
+    margin-top: 0.8rem
+      
+  &__toggle &__togglebar::before
+    margin-top: -0.8rem
+      
+  &__toggle.expanded &__togglebar 
+    background: transparent
+      
+  &__toggle.expanded &__togglebar::after, &__toggle.expanded &__togglebar::before 
+    background: white
+    margin-top: 0
+
+  &__toggle.expanded &__togglebar::after 
+    -ms-transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+  &__toggle.expanded &__togglebar::before 
+    -ms-transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+
